@@ -1,0 +1,63 @@
+/*
+$(document).ready(function () {
+	
+	// 통합검색 submit
+	$("#search-form").submit(function() {
+		//var cTxt = $("#hd-search dt").text();
+		var cTxt = $("#search_type").val();
+		var sTxt = $("#searchWord").val();
+			  
+		if (sTxt == "검색어를 입력하세요.") sTxt = "" ;
+		
+		if (cTxt == "직원검색") {
+			$("#searchAdmNm").val(sTxt) ;
+			$("#searchQuery").val("") ;
+			$("#search-form").attr("action","/USR/deptInfo/m_94/lst.jsp");
+			//$("#search-form").submit();
+		}
+		else {
+			$("#searchQuery").val(sTxt) ;
+			$("#searchAdmNm").val("") ;
+			$("#search-form").attr("action","/search/search.jsp");
+			//$("#search-form").submit();
+	  	}
+	  
+		//return false;
+	});
+});
+*/
+
+// 통합검색 Enter키 입력시 submit 처리
+function searchWordKeyPress(e) {
+	if (e.keyCode == 13) {
+		searchSubmit();	
+		return false;
+	}/*
+	else {
+		return false;
+	}*/
+}
+
+// 통합검색 submit
+function searchSubmit() {
+	//var cTxt = $("#hd-search dt").text();
+	var cTxt = $("#search_type").val();
+	var sTxt = $("#searchWord").val();
+		  
+	if (sTxt == "검색어를 입력하세요.") sTxt = "" ;
+	
+	if (cTxt == "직원검색") {
+		$("#searchAdmNm").val(sTxt) ;
+		$("#searchQuery").val("") ;
+		$("#search-form").attr("action","/USR/deptInfo/m_94/lst.jsp");
+		$("#search-form").submit();
+	}
+	else {
+		$("#searchQuery").val(sTxt) ;
+		$("#searchAdmNm").val("") ;
+		$("#search-form").attr("action","/search/search2020.jsp");
+		$("#search-form").submit();
+  	}
+  
+	//return false;	
+}

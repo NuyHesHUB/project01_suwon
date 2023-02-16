@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <!-- <script src="./js/script.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <style>
+ul{list-style: none;}
+.banner_wrap{
+    width: 1500px;
+    height: 36px;
+    margin: 0 auto;
+}
+.banner_wrap .banner_list{
+    width: 1300px;
+    height: 55px;
+    padding: 2px 168px 1px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    float: left;
+}
+.banner_wrap .banner_list .banner_track{
+    width: 1500px;
+    overflow: hidden;
+    background: red;
+}
+.banner_wrap .banner_list .banner_track ul{
+    width: 3006px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.banner_wrap .banner_list .banner_track ul li{
+    float: left;
+    margin: 0 10px;
+    line-height: 0;
+    text-align: center;
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.banner_wrap .banner_list .banner_track ul li a{}
+.banner_wrap .banner_list .banner_track ul li a img{
+    height: 100%;
+}
+
+.banner_wrap .control_box{
+    float: left;
+    width: 170px;
+    height: 30px;
+    margin-top: 6px;
+    text-align: center;
+    vertical-align: top;
+    color: #000;
+    letter-spacing: 0;
+    margin-left: 30px;
+}
+.banner_wrap .control_box .count{
+    width: 44px;
+    height: 30px;
+    float: left;
+}
+.banner_wrap .control_box .count .current{color: #dd541e;}
+.banner_wrap .control_box .count .gap{}
+.banner_wrap .control_box .count .total{}
+
+
+.banner_wrap .control_box .banner_control{
+    
+    width: 126px;
+    height: 30px;
+    clear: both;
+
+}
+.banner_wrap .control_box .banner_control button{
+    
+}
+.banner_wrap .control_box .banner_control .prev{
+    width: 24px;
+    height: 30px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    background: transparent;
+    font-size: 0;
+    float: left;
+}
+.banner_wrap .control_box .banner_control .prev::before{
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 9px;
+    height: 13px;
+    background-repeat: no-repeat;
+    background-image: url(./img/main_icons.png);
+    content: '';
+    background-position: -120px -60px;
+}
+.banner_wrap .control_box .banner_control .play{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    background: transparent;
+    font-size: 0;
+    float: left;
+}
+
+.banner_wrap .control_box .banner_control .play::before{
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background: url(./img/main_icons.png) no-repeat;
+    content: '';
+    background-position: -180px -60px;
+}
+.banner_wrap .control_box .banner_control .play.add::before{
+    background-position: -150px -60px;
+}
+.banner_wrap .control_box .banner_control .next{
+    width: 24px;
+    height: 30px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    background: transparent;
+    font-size: 0;
+    float: left;
+}
+.banner_wrap .control_box .banner_control .next::before{
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 9px;
+    height: 13px;
+    background: url(./img/main_icons.png) no-repeat;
+    content: '';
+    background-position: -141px -60px;
+}
+
+.banner_wrap .banner_more{
+    position: relative;
+    right: 1px;
+    width: 30px;
+    height: 30px;
+    vertical-align: top;
+    background: transparent;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.banner_wrap .banner_more::before{
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-image: url(./img/main_icons.png);
+    background-position: -210px -60px;
+    content: '';
+}
+.animated{transition: left .3s ease-in;}
+
+    </style>
+</head>
+<body>
+    <div class="banner_wrap">
+        <div class="banner_list">
+            <div class="banner_track" ><!-- style="width: 5678px;" -->
+                <ul class="bannerslideList cf">
+                    <li class="banner_item" style="width: 147px;"><a href="#"><img src="./img/banner_1.png" alt="배너1"></a></li>
+                    <li class="banner_item" style="width: 147px;"><a href="#"><img src="./img/banner_2.jpg" alt="배너2"></a></li>
+                    <li class="banner_item" style="width: 147px;"><a href="#"><img src="./img/banner_3.gif" alt="배너3"></a></li>
+                    <li class="banner_item" style="width: 147px;"><a href="#"><img src="./img/banner_4.png" alt="배너4"></a></li>
+                    <li class="banner_item" style="width: 147px;"><a href="#"><img src="./img/banner_5.gif" alt="배너5"></a></li>
+                    <li class="banner_item" style="width: 147px;"><a href="#"><img src="./img/banner_6.gif" alt="배너6"></a></li>
+                    <li class="banner_item" style="width: 147px;"><a href="#"><img src="./img/banner_7.gif" alt="배너7"></a></li>
+                    <li class="banner_item" style="width: 147px;"><a href="#"><img src="./img/banner_8.gif" alt="배너8"></a></li>
+                    <li class="banner_item" style="width: 147px;"><a href="#"><img src="./img/banner_9.gif" alt="배너9"></a></li>
+                    <li class="banner_item" style="width: 147px;"><a href="#"><img src="./img/banner_10.gif" alt="배너10"></a></li>
+                    <li class="banner_item" style="width: 147px;"><a href="#"><img src="./img/banner_11.jpg" alt="배너11"></a></li>
+                    <li class="banner_item" style="width: 147px;"><a href="#"><img src="./img/banner_12.gif" alt="배너12"></a></li>
+                    <li class="banner_item" style="width: 147px;"><a href="#"><img src="./img/banner_13.gif" alt="배너13"></a></li>
+                    <li class="banner_item" style="width: 147px;"><a href="#"><img src="./img/banner_14.gif" alt="배너14"></a></li>
+                    <li class="banner_item" style="width: 147px;"><a href="#"><img src="./img/banner_15.png" alt="배너15"></a></li>
+                    <li class="banner_item" style="width: 147px;"><a href="#"><img src="./img/banner_16.png" alt="배너16"></a></li>
+                    <li class="banner_item" style="width: 147px;"><a href="#"><img src="./img/banner_17.png" alt="배너17"></a></li>
+                    <li class="banner_item" style="width: 147px;"><a href="#"><img src="./img/banner_18.jpg" alt="배너18"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="control_box">
+            <div class="count">
+                <span id="current" class="current">1</span>
+                <span class="gap">/</span>
+                <span class="total">18</span>
+            </div>
+            <div class="banner_control">
+                <button id="prev" class="prev" type="button"></button>
+                <button id="play" class="play" type="button"></button>
+                <button id="next" class="next" type="button"></button>
+                <button id="banner_more" type="button"></button>
+            </div>
+        </div>
+    </div>
+    <script>
+//방법3
+
+//bannerSlide
+const slideBanner=$('.banner_track>ul');
+const leftBtn=$('.prev');
+const ppBtn=$('.banner_wrap .control_box .banner_control .play')
+const rightBtn=$('.next');
+const slideList=$('.banner_track>ul>li');
+const slide=$('.banner_track> bannerslideList')
+const slideWidth=slideList.width();
+let setIntervalId;
+let current=0;
+let ppbtn=true;
+
+bannerslider();
+function bannerslider(){
+    setIntervalId=setInterval(function(){
+        slideBanner.stop().animate({left:-(slideWidth+15)},500, function(){
+            $('.banner_track > ul > li:first').insertAfter('.banner_track>ul>li:last')
+            slideBanner.css({left:0})
+        })
+    },2000);
+}
+
+//마우스 올리면 슬라이드 멈춤
+//마우스 빠져나오면 슬라이드 움직임
+/* $('.bannerArea > .area').hover(function(){
+    clearInterval(setIntervalId)
+},function(){
+    bannerslider();
+}
+); */
+//풀이
+leftBtn.hover(function(){
+    clearInterval(setIntervalId)
+    },function(){
+    bannerslider();
+    });
+ppBtn.hover(function(){
+clearInterval(setIntervalId)
+},function(){
+bannerslider();
+});
+rightBtn.hover(function(){
+    clearInterval(setIntervalId)
+    },function(){
+    bannerslider();
+    });
+slideBanner.hover(function(){
+    clearInterval(setIntervalId)
+    },function(){
+    bannerslider();
+    }); 
+
+//오른쪽 버튼 누르면 오른쪽으로 한칸이동
+//왼쪽버튼을 누르면 왼쪽으로 한칸이동
+$('.next').click(function(){
+        slideBanner.stop().animate({left:-(slideWidth+20)},500, function(){
+            $('.banner_track > ul > li:first').insertAfter('.banner_track>ul>li:last')
+            slideBanner.css({left:0})
+        });
+    });
+leftBtn.click(function(){
+    $('.banner_track > ul > li:last').insertBefore('.banner_track>ul>li:first');
+    slideBanner.css({left:-(slideWidth+20)}).stop().animate({left:0},500)
+});
+
+ppBtn.click(function(){
+    
+    if(ppbtn==true){
+        $(this).addClass('add');
+        clearInterval();
+        ppbtn=false;
+    }else{
+        $(ppBtn).removeClass('add');
+        bannerslider();
+        ppbtn=true;
+    }
+});
+
+/* setInterval(fnSlide, 3000);
+function fnSlide() {
+  $(".banner_track>ul").animate({ "margin-left": "-175px" }, 1200, function () {
+    $(".banner_track>ul").css({ "margin-left": "-8px" });
+    $("li:first-child").insertAfter("li:last-child");
+  });
+};  */
+
+/* const $right=$('.control_box .banner_control .next');
+const $left=$('.control_box .banner_control .prev');
+const $play=$('.control_box .banner_control .play')
+const $moving=$('.banner_track>ul');
+const $current=$('.current')
+let ppbtn=true;
+
+
+timer();
+function timer(){
+    setIntervalId=setInterval(function(){
+        $(".banner_track>ul").animate({"margin-left": "-175px"},function(){
+        $(".banner_track>ul").css({ "margin-left": "-8px" });
+        $("li:first-child").insertAfter("li:last-child");    
+        });
+    },1000);
+    $('.bannerslideList li, .prev, .next').hover(function(){
+        clearInterval(setIntervalId)
+    },function(){
+        timer();
+    });
+}
+
+$right.click(function(){
+    $moving.stop().animate({left:147*-1},200,function(){
+        $(this).children("li:first").insertAfter($(this).children("li:last"));
+        $(this).css({left:0})
+    });
+
+});
+
+$left.click(function(){
+   $moving.children("li:last").insertBefore($moving.children("li:first"));
+   $moving.css({left:147*-1});
+   $moving.stop().animate({left:0},200);
+}); 
+
+$play.click(function(){
+    if(ppbtn==true){
+        $(this).addClass('add');
+        clearInterval(setIntervalId);
+        ppbtn=false;
+    }else{
+        $(this).removeClass('add');
+        timer();
+        ppbtn=true;
+    }
+});
+let counts=setInterval(updated);
+        let upto=18;
+        function updated(){
+            var count= document.getElementById("current");
+            count.innerHTML=--upto;
+            if(upto === 0) {
+                clearInterval(counts);
+            }
+        } */
+
+
+    </script>
+</body>
+</html>

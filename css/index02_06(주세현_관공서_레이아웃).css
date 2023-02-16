@@ -1,0 +1,202 @@
+@charset "utf-8";
+@import url('./reset.css');
+
+.container{
+    width: 1400px;
+    height: inherit; /* 부모의 높이를 상속받으라는 명령 */
+    margin: 0 auto;
+    background: rgba(0, 0, 0, .5);
+}
+#header{
+    width: 100%;
+    height: 106px;
+    background: #6666;
+}
+#nav{
+    width: 100%;
+    height: 64px;
+    background: #2a3342;
+}
+#content{
+    width: 100%;
+    background: #fff;
+    height: auto; /* 높이는 오토 보고싶으면 임의로 잡고 본다. 1000px로 잡고 나중에 auto로 잡는다. */
+    margin-top: 40px ;
+}
+.main_con1{
+    width: 100%;
+    height: 368px;
+    background: rgb(75, 118, 246);
+}
+.left_con1{
+    width: 733px;
+    height: 368px;
+    background: rgb(172, 246, 75);
+    float: left;
+    margin-right: 1px;
+}
+.middle_con1{
+    width: 301px;
+    height: 368px;
+    background: rgb(20, 125, 37);
+    float: left;
+    margin-right: 28px;
+}
+.right_con1{
+    width: 335px;
+    height: 267px;
+    background: rgb(125, 104, 20);
+    float: right;
+}
+.rightdown_con1{
+    width: 335px;
+    height: 101px;
+    background: rgb(125, 20, 20);
+    float: right;
+}
+.main_con2{
+    width: 100%;
+    height: 241px;
+    background: rgb(87, 182, 230);
+    margin-top: 20px;
+}
+.left_con2{
+    width: 336px;
+    height: 241px;
+    background: rgb(87, 182, 230);
+    margin-right: 27px;
+    float: left;
+}
+.item_rolling{
+    width: 100%;
+    height: 42px;
+    background: rgb(108, 230, 87);
+    float: left;
+}
+.left_photo{
+    width: 100%;
+    height: 199px;
+    background: rgb(230, 199, 87);
+    float: left;
+}
+.middle_con2{
+    width: 672px;
+    height: 241px;
+    background: rgb(205, 102, 102);
+    margin-right: 28px;
+    float: left;
+}
+.right_con2{
+    width: 335px;
+    height: 241px;
+    background: rgb(87, 182, 230);
+    float: right;
+}
+.item_rolling{
+    width: 100%;
+    height: 42px;
+    background: rgb(108, 230, 87);
+    float: left;
+}
+.right_photo{
+    width: 100%;
+    height: 199px;
+    background: rgb(230, 199, 87);
+    float: left;
+}
+.main_con3{
+    width: 100%;
+    height: 241px;
+    background: rgb(46, 49, 193);
+    margin-top: 40px;
+}
+.left_con3{
+    width: 336px;
+    height: 241px;
+    background: rgb(87, 182, 230);
+    margin-right: 27px;
+    float: left;
+}
+.item_rolling{
+    width: 100%;
+    height: 42px;
+    background: rgb(108, 230, 87);
+    float: left;
+}
+.left_photo{
+    width: 100%;
+    height: 199px;
+    background: rgb(230, 199, 87);
+    float: left;
+}
+.middle_con3{
+    width: 672px;
+    height: 241px;
+    background: rgb(205, 102, 102);
+    margin-right: 21px;
+    float: left;
+}
+.right_con3{
+    width: 335px;
+    height: 241px;
+    background: rgb(87, 182, 230);
+    
+    float: right;
+}
+.item_rolling{
+    width: 100%;
+    height: 42px;
+    background: rgb(108, 230, 87);
+    float: left;
+}
+.right_photo{
+    width: 100%;
+    height: 199px;
+    background: rgb(230, 199, 87);
+    float: left;
+}
+#icon{
+    width: 100%;
+    height: 127px;
+    background: rgb(87, 173, 230);
+    margin-top: 20px;
+    
+}
+#icon_ul{
+    width: 100%;
+}
+ul{
+    padding: 5px 201px;
+}
+#icon ul li{
+    width: 97px;
+    height: 116px;
+    background: rgb(24, 188, 136);
+    float: left;
+    margin-right: 1%;
+}
+#icon ul li:last-child{
+    margin-right: 0;
+}
+
+#wrap_banner{
+    width: 100%;
+    height: 112px;
+    background: rgb(139, 87, 230);
+}
+#footer{
+    width: 100%;
+    background: #fff;
+    height: auto;
+}
+.footer_menu{
+    width: 100%;
+    height: 71px;
+    background: rgb(169, 143, 215);
+    margin-top: 20px;
+}
+.footer_addr{
+    width: 100%;
+    height: 149px;
+    background: rgb(79, 54, 123);
+}

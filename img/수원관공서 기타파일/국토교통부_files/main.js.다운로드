@@ -1,0 +1,182 @@
+$(document).ready(function(e) {
+	//main_visual
+	var slider_visual = $('.bxslider_visual').bxSlider({
+		nextText:"다음",
+		prevText:"이전",
+		startText:"재생",
+		stopText:"일시정지",
+		mode:'fade',
+		moveSlides:1,
+		auto:true,
+		pause:5000,
+		speed:1000,
+		autoHover:true,
+		autoControls:true,
+		pager:false,
+        onSliderLoad: function (currentIndex){
+			var obj = currentIndex + 1;
+			var totCnt = ($('.bxslider_visual > li:not(.bx-clone)').length);			
+			slider_visual_cnt(obj,totCnt);
+		},
+		 onSlideBefore: function ($slideElement, oldIndex, newIndex){
+			var obj = newIndex + 1;
+			var totCnt = ($('.bxslider_visual > li:not(.bx-clone)').length);
+			slider_visual_cnt(obj,totCnt);			
+		}
+	});
+
+	var slider_banner = $('.bxslider_news').bxSlider({
+		startText:"재생",
+		stopText:"일시정지",
+		maxSlides:1,
+		moveSlides:1,
+		auto:true,
+		pause:5000,
+		speed:1000,
+		autoHover:true,
+		controls:false,
+		autoControls:true
+	});
+
+	var slider_banner = $('.bxslider_popzone').bxSlider({
+		startText:"재생",
+		stopText:"일시정지",
+		maxSlides:1,
+		moveSlides:1,
+		auto:true,
+		pause:5000,
+		speed:1000,
+		autoHover:true,
+		controls:false,
+		autoControls:true
+	});
+
+	var slider_banner = $('.bxslider_banner').bxSlider({
+		nextText:"다음",
+		prevText:"이전",
+		startText:"재생",
+		stopText:"일시정지",
+		slideWidth:165,
+		maxSlides:7,
+		moveSlides:1,
+		auto:true,
+		pause:5000,
+		speed:1000,
+		autoHover:true,
+		autoControls:true,
+		pager:false
+	});
+
+	//tab style : 공지사항
+	$('.tab_main > ul > li > h3 > a').click(function() {
+		var ul = $(this).parent().parent().parent();
+		var i = $(this).parent().parent().index();
+		
+		ul.find('li').removeClass('on');
+		ul.find('div').hide().eq(i).fadeIn();
+		$(this).parent().parent().addClass('on');
+	});
+
+	//tab style : 정책자료
+	$('.policy > ul > li > a').bind('mouseover focus',function() {
+		var ul = $(this).parent().parent();
+		var i = $(this).parent().index();
+
+		ul.find('li').removeClass('on');
+		ul.find('div').hide().eq(i).fadeIn();
+		$(this).parent().addClass('on');
+	});
+
+	//bodo data
+	$(".wrap_newdata .type_latest em").each(function(){
+		if($(window).width() >= 1281){
+			var length = 34; //표시할 글자수 정하기
+		} 
+		else if($(window).width() >= 801){var length = 37;}  
+		else if($(window).width() >= 768){var length = 106;} 
+		else if($(window).width() >= 600){var length = 75;}
+		else if($(window).width() >= 480){var length = 56;}
+		else if($(window).width() >= 414){var length = 42;}
+		else if($(window).width() >= 320){var length = 26;}
+
+		$(this).each(function(){
+			if( $(this).text().length >= length ){
+				$(this).text( $(this).text().substr(0,length)+'...') 
+				//지정할 글자수 이후 표시할 텍스트
+			}
+		});
+	});
+	
+	$(".wrap_newdata .type_latest span").each(function(){
+		if($(window).width() >= 1281){
+			var length = 89; //표시할 글자수 정하기
+		} 
+		else if($(window).width() >= 801){var length = 65;}  
+		else if($(window).width() >= 768){var length = 149;} 
+		else if($(window).width() >= 600){var length = 110;}
+		else if($(window).width() >= 480){var length = 86;}
+		else if($(window).width() >= 414){var length = 68;}
+		else if($(window).width() >= 320){var length = 45;}
+
+		$(this).each(function(){
+			if( $(this).text().length >= length ){
+				$(this).text( $(this).text().substr(0,length)+'...') 
+				//지정할 글자수 이후 표시할 텍스트
+			}
+		});
+	});
+
+
+	//notice data
+	$(".wrap_notice .type_latest em").each(function(){
+		if($(window).width() >= 1281){
+			var length = 37; //표시할 글자수 정하기
+		} 
+		else if($(window).width() >= 801){var length = 70;} 
+		else if($(window).width() >= 768){var length = 41;} 
+		else if($(window).width() >= 600){var length = 68;}
+		else if($(window).width() >= 480){var length = 47;}
+		else if($(window).width() >= 414){var length = 40;}
+		else if($(window).width() >= 320){var length = 22;}
+
+		$(this).each(function(){
+			if( $(this).text().length >= length ){
+				$(this).text( $(this).text().substr(0,length)+'...') 
+				//지정할 글자수 이후 표시할 텍스트
+			}
+		});
+	});
+	
+	$(".wrap_notice .type_latest span").each(function(){
+		if($(window).width() >= 1281){
+			var length = 66; //표시할 글자수 정하기
+		} 
+		else if($(window).width() >= 801){var length = 107;} 
+		else if($(window).width() >= 768){var length = 68;} 
+		else if($(window).width() >= 600){var length = 104;}
+		else if($(window).width() >= 480){var length = 82;}
+		else if($(window).width() >= 414){var length = 70;}
+		else if($(window).width() >= 320){var length = 52;}
+
+		$(this).each(function(){
+			if( $(this).text().length >= length ){
+				$(this).text( $(this).text().substr(0,length)+'...') 
+				//지정할 글자수 이후 표시할 텍스트
+			}
+		});
+	});
+});
+
+
+//main visual cnt
+function slider_visual_cnt(obj,totCnt){
+	if(obj < 10){
+		if(totCnt < 10){
+			$('.bxslider_visual_pager').html( '<em>' + '0' + obj + '</em> <strong>0' + totCnt + '<strong>');
+		} else {
+			$('.bxslider_visual_pager').html( '<em>' + '0' + obj + '</em> <strong>' + totCnt + '<strong>');
+		}
+	} else {
+		$('.bxslider_visual_pager').html( '<em>' + obj + '</em> <strong>' + totCnt+ '<strong>');
+	}
+};

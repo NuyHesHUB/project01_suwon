@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수원특례시 sub4</title>
+    <link rel="stylesheet" href="./css/suwon_sub4.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/3d15d2c547.js" crossorigin="anonymous"></script>
+    <script src="./js/suwon.js"></script>
+</head>
+<body>
+    <div id="wrap">
+            <header id="header">
+                    <div class="menu_top">
+                    <div class="container">
+                            <div class="menu_top_left">
+                                <ul>
+                                    <li><a href="#" title="수원특례시의회">수원특례시의회</a></li>
+                                    <li><a href="#" title="수원특례시출범">수원특례시출범</a></li>
+                                    <li><a href="#" title="수원시민맞춤서비스">수원시민맞춤서비스</a></li>
+                                    <li><a href="#" title="청사안내">청사안내</a></li>
+                                    <li><a href="#" title="조직도">조직도</a></li>
+                                    <li><a href="https://www.suwon.go.kr/stat/stats/statsView.do?categorySeqNo=14" target="_blank" title="새창" class="population">수원시 인구 <em>1,221,496 명</em></a></li>
+                                </ul>
+                            </div>
+                            <div class="menu_top_right">
+                                <div class="weather_box">
+                                    <a href="#">
+                                        <span class="weather_icon"></span>
+                                        <span class="weather_temp">13℃</span>
+                                        <span class="weather_text1">맑음</span>
+                                        <span class="weather_text2">미세먼지 좋음</span>
+                                    </a>
+                                </div>
+                                <div class="login_box">
+                                    <a href="#">
+                                        <span class="login_icon"></span>
+                                        <span class="login_text">로그인</span>
+                                    </a>
+                                </div>
+                                <div class="language_box">
+                                    <a href="#">
+                                        <span class="language_icon"></span>
+                                        <span class="language_text">언어별보기</span>
+                                        <span><button type="button" class="language_btn">
+                                        </button></span><!-- 버튼 나중에 form->option으로 수정 -->
+                                    </a>
+                                </div>
+                                <div class="site_box">
+                                    <a href="#">
+                                        <span class="site_text">관련사이트</span>
+                                        <span><button type="button" class="site_btn"></button>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <nav id="nav">
+                <div class="menu_bottom">
+                    <div class="container">
+                        <h1><a href="./index.html"><span><img src="./img/logo.png" alt=""></span></a></h1>
+                        <ul class="menu_bottom_menu">
+                            <li><a class="bottom_menu_text" href="./suwon_sub1.html" title="종합민원">종합민원</a>
+                                <div class="width100">
+                                    <ul class="hide">
+                                        <li>
+                                            <h3><a href="#" title="민원신청">민원신청</a></h3>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="민원신청">민원발급</a></h3>
+                                            <p><a href="#" title="정부24(인터넷민원발급)">정부24(인터넷민원발급)</a></p>
+                                            <p><a href="#" title="대법원 전자가족관계등록시스템">대법원 전자가족관계등록시스템</a></p>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="민원안내">민원안내</a></h3>
+                                            <p><a href="#" title="민원서류접수안내">민원서류접수안내</a></p>
+                                            <p><a href="#" title="전입시민안내">전입시민안내</a></p>
+                                            <p><a href="#" title="무인민원발급기">무인민원발급기</a></p>
+                                            <p><a href="#" title="외국인(외국국적동포)인감신고">외국인(외국국적동포)인감신고</a></p>
+                                            <p><a href="#" title="인감증명발급">인감증명발급</a></p>
+                                            <p><a href="#" title="주민등록증, 등.초본 발급">주민등록증, 등.초본 발급</a></p>
+                                            <p><a href="#" title="어디서나민원(FAX민원)">어디서나민원(FAX민원)</a></p>
+                                            <p><a href="#" title="민원1회방문처리제 안내">민원1회방문처리제 안내</a></p>
+                                            <p><a href="#" title="사전심사청구제도안내">사전심사청구제도안내</a></p>
+                                            <p><a href="#" title="사전상담 예약제 안내">사전상담 예약제 안내</a></p>
+                                            <p><a href="#" title="민원후견인제 안내">민원후견인제 안내</a></p>
+                                            <p><a href="#" title="사회적 약자 배려 창구 운영">사회적 약자 배려 창구 운영</a></p>
+                                            <p><a href="#" title="민원수수료안내">민원수수료안내</a></p>
+                                            <p><a href="#" title="구술.전화로 신청가능 민원안내">구술.전화로 신청가능 민원안내</a></p>
+                                            <p><a href="#" title="행정정보공동이용안내">행정정보공동이용안내</a></p>
+                                            <p><a href="#" title="수원시 민원인의 권리와 의무">수원시 민원인의 권리와 의무</a></p>
+                                            <p><a href="#" title="가사홈서비스">가사홈서비스</a></p>
+                                            <p><a href="#" title="본인서명사실확인서발급">본인서명사실확인서발급</a></p>
+                                            <p><a href="#" title="전자본인서명확인서발급">전자본인서명확인서발급</a></p>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="민원센터안내">민원센터안내</a></h3>
+                                            <p><a href="#" title="휴면콜센터">휴면콜센터</a></p>
+                                            <p><a href="#" title="수원시 행정정보종합센터">수원시 행정정보종합센터</a></p>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="여권민원">여권민원</a></h3>
+                                            <p><a href="#" title="여권민원실 안내">여권민원실 안내</a></p>
+                                            <p><a href="#" title="여권의 개요">여권의 개요</a></p>
+                                            <p><a href="#" title="여권 신청 (최초, 유효기간 만료)">여권 신청 (최초, 유효기간 만료)</a></p>
+                                            <p><a href="#" title="여권 재발급 및 기재사항변경">여권 재발급 및 기재사항변경</a></p>
+                                            <p><a href="#" title="여권발급 수수료">여권발급 수수료</a></p>
+                                            <p><a href="#" title="여권 교부일 및 수령방법">여권 교부일 및 수령방법</a></p>
+                                            <p><a href="#" title="병역사항">병역사항</a></p>
+                                            <p><a href="#" title="실시간 대기 현황">실시간 대기 현황</a></p>
+                                            <p><a href="#" title="온라인사전예약">온라인사전예약</a></p>
+                                        </li>
+                                        <li class="clear_both">
+                                            <h3><a href="#" title="민원서식자료실">민원서식자료실</a></h3>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="민원사무편람">민원사무편람</a></h3>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="행정서비스 헌장 안내">행정서비스 헌장 안내</a></h3>
+                                            <p><a href="#" title="행정서비스헌장">행정서비스헌장</a></p>
+                                            <p><a href="#" title="공통서비스 이행표준">공통서비스 이행표준</a></p>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="정보통신공사">정보통신공사</a></h3>
+                                            <p><a href="#" title="사용전검사 업무안내">사용전검사 업무안내</a></p>
+                                            <p><a href="#" title="사용전검사 관련 자료실">사용전검사 관련 자료실</a></p>
+                                            <p><a href="#" title="사용전검사 관계 법규">사용전검사 관계 법규</a></p>
+                                            <p><a href="#" title="감리원 배치신고 업무안내">감리원 배치신고 업무안내</a></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a class="bottom_menu_text" href="./suwon_sub2.html" title="시민참여">시민참여</a>
+                                <div class="width100">
+                                    <ul>
+                                        <li>
+                                            <h3><a href="#" title="민원신청">수원만민광장</a></h3>
+                                            <p><a href="#" title="투표">투표</a></p>
+                                            <p><a href="#" title="공모">공모</a></p>
+                                            <p><a href="#" title="토론광장">토론광장</a></p>
+                                            <p><a href="#" title="정책제안">정책제안</a></p>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="주민참여예산">주민참여예산</a></h3>
+                                            <p><a href="#" title="주민참여예산제">주민참여예산제</a></p>
+                                            <p><a href="#" title="주만참여예산사업제안">주만참여예산사업제안</a></p>
+                                            <p><a href="#" title="주민참여예산운영계획">주민참여예산운영계획</a></p>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="제안마당">제안마당</a></h3>
+                                            <p><a href="#" title="제안안내">제안안내</a></p>
+                                            <p><a href="#" title="제안심사 결과">제안심사 결과</a></p>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="칭찬합니다">칭찬합니다</a></h3>
+                                            <p><a href="#" title="칭찬합니다">칭찬합니다</a></p>
+                                            <p><a href="#" title="수상내역">수상내역</a></p>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="지역소식">지역소식</a></h3>
+                                        </li>
+                                        <li class="clear_both">
+                                            <h3><a href="#" title="신고센터">신고센터</a></h3>
+                                            <p><a href="#" title="공직자 부조리 신고센터">공직자 부조리 신고센터</a></p>
+                                            <p><a href="#" title="위조상품신고안내">위조상품신고안내</a></p>
+                                            <p><a href="#" title="예산낭비신고센터">예산낭비신고센터</a></p>
+                                            <p><a href="#" title="공익신고센터">공익신고센터</a></p>
+                                            <p><a href="#" title="복지&middot;보조금 부정수급 및 공공 재정 부정청구 신고센터">복지&middot;보조금 부정수급 및 공공 재정 부정청구 신고센터</a></p>
+                                            <p><a href="#" title="은닉재산신고센터">은닉재산신고센터</a></p>
+                                            <p><a href="#" title="청탁금지법 신고센터">청탁금지법 신고센터</a></p>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="인권자료실">인권자료실</a></h3>
+                                            <p><a href="#" title="인권정책">인권정책</a></p>
+                                            <p><a href="#" title="인권센터">인권센터</a></p>
+                                            <p><a href="#" title="인권영향평가">인권영향평가</a></p>
+                                            <p><a href="#" title="인권침해신고">인권침해신고</a></p>
+                                            <p><a href="#" title="인권위원회 소개">인권위원회 소개</a></p>
+                                            <p><a href="#" title="인권위원회 활동">인권위원회 활동</a></p>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="수원희망글판">수원희망글판</a></h3>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="버스정류장 인문학글판">버스정류장 인문학글판</a></h3>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="수원포럼">수원포럼</a></h3>
+                                        </li>
+                                        <li class="clear_both">
+                                            <h3><a href="#" title="지속가능한 도시 수원">지속가능한 도시 수원</a></h3>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="수원시 웹서비스 모니터단">수원시 웹서비스 모니터단</a></h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a class="bottom_menu_text" href="./suwon_sub3.html" title="정보공개/개방">정보공개/개방</a>
+                                <div class="width100">
+                                    <ul>
+                                        <li>
+                                            <h3><a href="#" title="시정자료실">시정자료실</a></h3>
+                                            <p><a href="#" title="수원시보">수원시보</a></p>
+                                            <p><a href="#" title="수원시정백서">수원시정백서</a></p>
+                                            <p><a href="#" title="전자책">전자책</a></p>
+                                            <p><a href="#" title="정책실명제">정책실명제</a></p>
+                                            <p><a href="#" title="성과관리">성과관리</a></p>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="청렴수원">청렴수원</a></h3>
+                                            <p><a href="#" title="공직자재산등록신고 및 심사">공직자재산등록신고 및 심사</a></p>
+                                            <p><a href="#" title="예산절감내실을 위한 계약심사 실시">예산절감내실을 위한 계약심사 실시</a></p>
+                                            <p><a href="#" title="직무관련 금품 처리결과 공개">직무관련 금품 처리결과 공개</a></p>
+                                            <p><a href="#" title="부정청탁 및 부패공직자 공개">부정청탁 및 부패공직자 공개</a></p>
+                                            <p><a href="#" title="감사&middot;조사결과공개">감사&middot;조사결과공개</a></p>
+                                            <p><a href="#" title="청렴시책공개">청렴시책공개</a></p>
+                                            <p><a href="#" title="청사신축비용공개">청사신축비용공개</a></p>
+                                            <p><a href="#" title="청렴자료실">청렴자료실</a></p>
+                                            <p><a href="#" title="행정재산 관리위탁 현황 공개">행정재산 관리위탁 현황 공개</a></p>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="행정정보공개">행정정보공개</a></h3>
+                                            <p><a href="#" title="정보공개제도">정보공개제도</a></p>
+                                            <p><a href="#" title="원문정보공개">원문정보공개</a></p>
+                                            <p><a href="#" title="사전정보공표">사전정보공표</a></p>
+                                            <p><a href="#" title="정보공개목록">정보공개목록</a></p>
+                                            <p><a href="#" title="수원시 조직정보 공개">수원시 조직정보 공개</a></p>
+                                            <p><a href="#" title="비공개 대상정보 세부기준">비공개 대상정보 세부기준</a></p>
+                                            <p><a href="#" title="개인정보목적외이용,제3자제공">개인정보목적외이용,제3자제공</a></p>
+                                            <p><a href="#" title="개인정보처리업무위탁">개인정보처리업무위탁</a></p>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="업무추진비공개">업무추진비공개</a></h3>
+                                            <p><a href="#" title="시장 업무추진비">시장 업무추진비</a></p>
+                                            <p><a href="#" title="부시장 업무추진비">부시장 업무추진비</a></p>
+                                            <p><a href="#" title="본청 업무추진비">본청 업무추진비</a></p>
+                                            <p><a href="#" title="사업소 업무추진비">사업소 업무추진비</a></p>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="상품권 구매현황공개">상품권 구매현황공개</a></h3>
+                                        </li>
+                                        <li class="clear_both">
+                                            <h3><a href="#" title="정보공개청구">정보공개청구</a></h3>
+                                            <p><a href="#" title="인터넷청구">인터넷청구</a></p>
+                                            <p><a href="#" title="각종서식">각종서식</a></p>
+                                            <p><a href="#" title="접수기관">접수기관</a></p>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="빅데이터">빅데이터</a></h3>
+                                            <p><a href="#" title="공공데이터 제공 및 활용">공공데이터 제공 및 활용</a></p>
+                                            <p><a href="#" title="통계로 보는 수원">통계로 보는 수원</a></p>
+                                            <p><a href="#" title="수원시 빅데이터 포털">수원시 빅데이터 포털</a></p>
+                                            <p><a href="#" title="데이터 관련 법&middot;조례">데이터 관련 법&middot;조례</a></p>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="지방공기업">지방공기업</a></h3>
+                                            <p><a href="#" title="지방공기업이란">지방공기업이란</a></p>
+                                            <p><a href="#" title="지방공기업 현황&middot;경영정보">지방공기업 현황&middot;경영정보</a></p>
+                                            <p><a href="#" title="산하 지방공기업 결산정보">산하 지방공기업 결산정보</a></p>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="출자&middot;출연기관">출자&middot;출연기관</a></h3>
+                                            <p><a href="#" title="출자&middot;출연기관 현황">출자&middot;출연기관 현황</a></p>
+                                            <p><a href="#" title="출연기관 경영정보">출연기관 경영정보</a></p>
+                                            <p><a href="#" title="출연기관 결산정보">출연기관 결산정보</a></p>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="위원회방">위원회방</a></h3>
+                                            <p><a href="#" title="각 위원회 현황">각 위원회 현황</a></p>
+                                            <p><a href="#" title="각 위원회 심의결과">각 위원회 심의결과</a></p>
+                                        </li>
+                                        <li class="clear_both">
+                                            <h3><a href="#" title="규제개혁&middot;적극행정">규제개혁&middot;적극행정</a></h3>
+                                            <p><a href="#" title="규제개혁">규제개혁</a></p>
+                                            <p><a href="#" title="적극행정과 소극행정">적극행정과 소극행정</a></p>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="연도별시정계획">연도별시정계획</a></h3>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="예산&middot;재정">예산&middot;재정</a></h3>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="공공시설물 예약하기">공공시설물 예약하기</a></h3>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="학술용역">학술용역</a></h3>
+                                        </li>
+                                        <li class="clear_both">
+                                            <h3><a href="#" title="국무국외연수자료실">국무국외연수자료실</a></h3>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="자치법규조례">자치법규조례</a></h3>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="경기도 민생범죄통계">경기도 민생범죄통계</a></h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a class="bottom_menu_text" href="./suwon_sub4.html" title="수원소식">수원소식</a>
+                                <div class="width100">
+                                    <ul>
+                                        <li>
+                                            <h3><a href="#" title="시정소식">시정소식</a></h3>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="보도자료">보도자료</a></h3>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="해명자료">해명자료</a></h3>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="사진보도자료">사진보도자료</a></h3>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="시정브리핑">시정브리핑</a></h3>
+                                        </li>
+                                        <li class="clear_both">
+                                            <h3><a href="#" title="공고/고시/입법예고">공고/고시/입법예고</a></h3>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="인문학 강좌">인문학 강좌</a></h3>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="구인&middot;구직">구인&middot;구직</a></h3>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="주간행사계획">주간행사계획</a></h3>
+                                        </li>
+                                        <li class="clear_both">
+                                            <h3><a href="#" title="모두의 사진">모두의 사진</a></h3>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="정보통통">정보통통</a></h3>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="계약정보">계약정보</a></h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a class="bottom_menu_text" href="./suwon_sub5.html" title="수원소개">수원소개</a>
+                                <div class="width100">
+                                    <ul>
+                                        <li>
+                                            <h3><a href="#" title="수원시 소개">수원시 소개</a></h3>
+                                            <p><a href="#" title="수원시 유래와역사">수원시 유래와역사</a></p>
+                                            <p><a href="#" title="시민헌장">시민헌장</a></p>
+                                            <p><a href="#" title="수원의 노래">수원의 노래</a></p>
+                                            <p><a href="#" title="수원의 지도">수원의 지도</a></p>
+                                            <p><a href="#" title="수원지명유래">수원지명유래</a></p>
+                                            <p><a href="#" title="수원시 행정구역">수원시 행정구역</a></p>
+                                            <p><a href="#" title="수원시청사의 변천">수원시청사의 변천</a></p>
+                                            <p><a href="#" title="수원의 인물">수원의 인물</a></p>
+                                            <p><a href="#" title="역대시장/부시장">역대시장/부시장</a></p>
+                                            <p><a href="#" title="국내자매도시">국내자매도시</a></p>
+                                            <p><a href="#" title="국내자매&middot;우호도시">국내자매&middot;우호도시</a></p>
+                                            <p><a href="#" title="수원을 아시나요">수원을 아시나요</a></p>
+                                            <p><a href="#" title="찾아오시는 길">찾아오시는 길</a></p>
+                                            <p><a href="#" title="주차장 안내">주차장 안내</a></p>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="수원특례시">수원특례시</a></h3>
+                                            <p><a href="#" title="특례시란">특례시란</a></p>
+                                            <p><a href="#" title="특례시 이야기">특례시 이야기</a></p>
+                                            <p><a href="#" title="특례시 홍보센터">특례시 홍보센터</a></p>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="조직 및 업무">조직 및 업무</a></h3>
+                                            <p><a href="#" title="수원시 조직도">수원시 조직도</a></p>
+                                            <p><a href="#" title="부서별팩스번호">부서별팩스번호</a></p>
+                                            <p><a href="#" title="청사안내">청사안내</a></p>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="수원시 브랜드">수원시 브랜드</a></h3>
+                                            <p><a href="#" title="CI&middot;시기">CI&middot;시기</a></p>
+                                            <p><a href="#" title="CI 변천사">CI 변천사</a></p>
+                                            <p><a href="#" title="시정VI">시정VI</a></p>
+                                            <p><a href="#" title="마스코트">마스코트</a></p>
+                                            <p><a href="#" title="나무&middot;꽃&middot;새&middot;주 상징종">나무&middot;꽃&middot;새&middot;주 상징종</a></p>
+                                            <p><a href="#" title="브랜드 사용승인">브랜드 사용승인</a></p>
+                                            <p><a href="#" title="수원이 캐릭터">수원이 캐릭터</a></p>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="지도로 보는 수원">지도로 보는 수원</a></h3>
+                                            <p><a href="#" title="지도로 보는 지역정보">지도로 보는 지역정보</a></p>
+                                            <p><a href="#" title="항공사진 서비스">항공사진 서비스</a></p>
+                                        </li>
+                                        <li class="clear_both">
+                                            <h3><a href="#" title="도시 사용설명서">도시 사용설명서</a></h3>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#" title="수원시 홍보영상">수원시 홍보영상</a></h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a class="bottom_menu_text" href="#" title="분야별정보">분야별정보</a>
+                                <div class="width100">
+                                    <ul class="menu_item">
+                                        <li><a href="#" class="depth_text depth2_text"><span>뉴스포털</span></a></li>
+                                        <li><a href="#" class="depth_text depth2_text"><span>교육</span></a></li>
+                                        <li><a href="#" class="depth_text depth2_text"><span>교통</span></a></li>
+                                        <li><a href="#" class="depth_text depth2_text"><span>도시</span></a></li>
+                                        <li><a href="#" class="depth_text depth2_text"><span>문화&middot;체육</span></a></li>
+                                        <li><a href="#" class="depth_text depth2_text"><span>민방위</span></a></li>
+                                        <li><a href="#" class="depth_text depth2_text"><span>보건</span></a></li>
+                                        <li class="clear_both"><a href="#" class="depth_text depth2_text"><span>복지</span></a></li>
+                                        <li><a href="#" class="depth_text depth2_text"><span>세금</span></a></li>
+                                        <li><a href="#" class="depth_text depth2_text"><span>안전</span></a></li>
+                                        <li><a href="#" class="depth_text depth2_text"><span>일자리</span></a></li>
+                                        <li><a href="#" class="depth_text depth2_text"><span>경제&middot;기업</span></a></li>
+                                        <li><a href="#" class="depth_text depth2_text"><span>행사축제</span></a></li>
+                                        <li><a href="#" class="depth_text depth2_text"><span>환경&middot;녹지&middot;위생</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="menu_bottom_search_box">
+                            <form action="#" method="post">
+                                <fieldset>
+                                    <legend class="ir_so">검색</legend>
+                                <div class="search_box">
+                                <input id="input_search" class="input_search" type="text" name="input_search" placeholder="무엇이 궁금하세요?" autocomplete="off">
+                                <span class="submit">
+                                    <input type="button">
+                                </span>
+                                </div>
+                                </fieldset>
+                            </form>
+                            <div class="site_map"></div>
+                        </div>
+                    </div>
+                        
+                </div>
+                </nav>
+            </header>
+                    <header id="sub-header">
+                            <div class="sub_header_wrap">
+                                <div class="sub_container">
+                                    <div class="sub_header_title">
+                                        <h2><span>시정소식</span></h2>
+                                    </div>
+                                    <div class="sub_header_menu">
+                                        <div class="menu_left">
+                                            <ul class="cf">
+                                                <li class="home ir_pm"><a href="#">홈</a></li>
+                                                <li class="list"><button type="button"><span>수원소식</span></button></li>
+                                                <li class="list"><button type="button"><span>시정소식</span></button></li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu_right">
+                                            <ul>
+                                                <li class="share"><button type="button"><span class="ir_so">공유</span></button></li>
+                                                <li class="print"><button type="button"><span class="ir_so">인쇄</span></button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </header>
+                    <main id="sub-main" class="sub_main">
+                        <section id="sub-section" class="sub_section">
+                            <div class="sub_container">
+                               <form name="dataForm" id="dataFrom" method="get">
+                                   <fieldset>
+                                    <legend class="ir_so">게시물검색</legend>
+                                    <div class="search_box_wrap">
+                                        <div class="search_box">
+                                            <select name="search_select" id="searchSelect" class="search_select" title="searchselectbox">
+                                                <option value="title">제목</option>
+                                                <option value="content">내용</option>
+                                                <option value="content">제목+내용</option>
+                                            </select>
+                                            <input type="text" id="searchTextBox" class="search_text_box" title="검색단어입력" value placeholder="검색단어 입력">
+                                            <span class="search_btn"><button type="submit">검색</button></span>
+                                        </div>
+                                    </div>
+                                   </fieldset>
+                               </form>
+                               <div class="row">
+                                    <div>
+                                        총<em>6121</em>건 &nbsp;[ <em>1</em>/613 페이지 ]
+                                    </div>
+                               </div>
+                               <table class="sub_table">
+                                    <caption class="ir_so">수원소식 시정소식 목록(게시판 목록으로 번호,제목,작성자명,등록일,조회 정보를 제공합니다.)</caption>
+                                    <colgroup>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <th scope="col" class="first" style="width: 100px;">번호</th>
+                                        <th scope="col" class="hidden" style="width: 612px;">제목</th>
+                                        <th scope="col" class="hidden" style="width: 136px;">작성자명</th>
+                                        <th scope="col" class="hidden" style="width: 136px;">담당부서</th>
+                                        <th scope="col" class="hidden" style="width: 136px;">등록일</th>
+                                        <th scope="col" class="hidden" style="width: 136px;">조회</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>6121</td>
+                                            <td class="subject"><a href="#">수원시청소년재단 상임이사 후보자 공개모집 공고</a><span class="sub_icon new"></span></td>
+                                            <td>백다원&nbsp;</td>
+                                            <td>청소년지원팀&nbsp;</td>
+                                            <td>2022/11/25&nbsp;</td>
+                                            <td>78</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6120</td>
+                                            <td class="subject"><a href="#">2022년 수원시 중소기업특례보증 지원계획 수정공고</a><span class="sub_icon new"></span></td>
+                                            <td>고운&nbsp;</td>
+                                            <td>기업창업육성팀&nbsp;</td>
+                                            <td>2022/11/24&nbsp;</td>
+                                            <td>248</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6119</td>
+                                            <td class="subject"><a href="#">디지털시대 대전환기 정신건강 포럼 개최</a><span class="sub_icon"></span></td>
+                                            <td>박예원&nbsp;</td>
+                                            <td>정신건강정책팀&nbsp;</td>
+                                            <td>2022/11/23&nbsp;</td>
+                                            <td>384</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6118</td>
+                                            <td class="subject"><a href="#">「인천 석정 한신더휴」 장애인 특별공급 안내</a><span class="sub_icon"></span></td>
+                                            <td>노경원&nbsp;</td>
+                                            <td>장애인복지팀&nbsp;</td>
+                                            <td>2022/11/23&nbsp;</td>
+                                            <td>324</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6117</td>
+                                            <td class="subject"><a href="#">2022년 가정용 저녹스 보일러 교체 지원사업 재공고</a><span class="sub_icon"></span></td>
+                                            <td>안정필&nbsp;</td>
+                                            <td>대기환경팀&nbsp;</td>
+                                            <td>2022/11/23&nbsp;</td>
+                                            <td>431</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6116</td>
+                                            <td class="subject"><a href="#">	2022년 반려동물 문화교실 "반려견 육아 멘토링" 교육 참여자 모집</a><span class="sub_icon"></span></td>
+                                            <td>이현규&nbsp;</td>
+                                            <td>동물보호팀&nbsp;</td>
+                                            <td>2022/11/23&nbsp;</td>
+                                            <td>456</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6115</td>
+                                            <td class="subject"><a href="#">탄소중립을 위한 타운홀미팅 개최</a><span class="sub_icon"></span></td>
+                                            <td>이민진&nbsp;</td>
+                                            <td>기후변화정책팀&nbsp;</td>
+                                            <td>2022/11/23&nbsp;</td>
+                                            <td>347</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6114</td>
+                                            <td class="subject"><a href="#">여성폭력 추방주간 캠페인</a><span class="sub_icon"></span></td>
+                                            <td>이은종&nbsp;</td>
+                                            <td>건강가정팀&nbsp;</td>
+                                            <td>2022/11/23&nbsp;</td>
+                                            <td>382</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6113</td>
+                                            <td class="subject"><a href="#">청년지원센터 개소식 및 소통공감 톡톡콘서트 개최</a><span class="sub_icon"></span></td>
+                                            <td>오지현&nbsp;</td>
+                                            <td>청년정책팀&nbsp;</td>
+                                            <td>2022/11/23&nbsp;</td>
+                                            <td>551</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6112</td>
+                                            <td class="subject"><a href="#">	「철산자이 더 헤리티지」 장애인 특별공급 안내</a><span class="sub_icon"></span></td>
+                                            <td>노경원&nbsp;</td>
+                                            <td>장애인복지팀&nbsp;</td>
+                                            <td>2022/11/22&nbsp;</td>
+                                            <td>600</td>
+                                        </tr>
+                                    </tbody>
+                               </table>
+                               <div class="sub_pagectrl_wrap">
+                                    <div class="sub_pagectrl">
+                                        <span class="Prev_btn">
+                                            <a href="#">
+                                                <i class="fa-solid fa-angles-left"></i>
+                                            </a>
+                                        </span>
+                                        <span class="page_btn">
+                                            <a href="#">1</a>
+                                            <a href="#">2</a>
+                                            <a href="#">3</a>
+                                            <a href="#">4</a>
+                                            <a href="#">5</a>
+                                            <a href="#">6</a>
+                                            <a href="#">7</a>
+                                            <a href="#">8</a>
+                                            <a href="#">9</a>
+                                            <a href="#">10</a>
+                                        </span>
+                                        <span class="next_btn">
+                                            <a class="next_btn_item next_btn1" href="#">
+                                                <i class="fa-solid fa-angle-right"></i>
+                                            </a>
+                                            <a class="next_btn_item next_btn2" href="#">
+                                                <i class="fa-solid fa-angles-right"></i>
+                                            </a>
+                                        </span>
+                                    </div>
+                               </div>
+
+
+
+
+
+
+
+
+                                
+                                <div class="satisfaction_box">
+                                    <p class="ir_so">콘텐츠 만족도 조사</p>
+                                    <div class="staisfaction_list">
+                                        <p>이 페이지에서 제공하는 정보에 대하여 어느 정도 만족하셨습니까?</p>
+                                        <form id="frmSatisfy" name="frmSatisfy" action="#" method="post">
+                                            <fieldset>
+                                                <legend class="ir_so">만족도 조사</legend>
+                                                <div class="input">
+                                                    <input class="radio" name="radioNo5" type="radio" checked="checked">
+                                                    <label for="radioNo5">매우만족</label>
+                                                    <input class="radio" name="radioNo4" type="radio">
+                                                    <label for="radioNo4">만족</label>
+                                                    <input class="radio" name="radioNo3" type="radio">
+                                                    <label for="radioNo3">보통</label>
+                                                    <input class="radio" name="radioNo2" type="radio">
+                                                    <label for="radioNo2">불만족</label>
+                                                    <input class="radio" name="radioNo1" type="radio">
+                                                    <label for="radioNo1">매우불만족</label>
+                                                </div>
+                                                <span><input type="submit" value="평가하기"></spa>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                    <div class="manager_info_box">
+                                        <ul class="cf">
+                                            <li><span>담당부서</span>정보통신과</li>
+                                            <li><span>전화번호</span>1899-3300</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </main>
+            <footer id="footer">
+                <div class="footer_top_wrap">
+                    <div class="container">
+                        <div class="footer_top">
+                            <ul class="cf">
+                                <li class="list"><a href="" title="시민">시민</a>
+                                    <div class="layer">
+                                        <ul>
+                                            <li><a href="#" title="수원iTV">수원iTV</a></li>
+                                            <li><a href="#" title="e수원뉴스">e수원뉴스</a></li>
+                                            <li><a href="#" title="수원시 E-BOOK">수원시 E-BOOK</a></li>
+                                            <li><a href="#" title="수원시 포토뱅크">수원시 포토뱅크</a></li>
+                                            <li><a href="#" title="복지로 도움요청 서비스">복지로 도움요청 서비스</a></li>
+                                            <li><a href="#" title="불법 주정차 단속 사전알리미 신청">불법 주정차 단속 사전알리미 신청</a></li>
+                                            <li><a href="#" title="공무원/임기제 채용">공무원/임기제 채용</a></li>
+                                            <li><a href="#" title="공공시설물 예약하기">공공시설물 예약하기</a></li>
+                                            <li><a href="#" title="주유소별 가격안내">주유소별 가격안내</a></li>
+                                            <li><a href="#" title="재정공시">재정공시</a></li>
+                                            <li><a href="#" title="불법주정차">불법주정차</a></li>
+                                            <li><a href="#" title="사회복지정보">사회복지정보</a></li>
+                                            <li><a href="#" title="민방위교육">민방위교육</a></li>
+                                            <li><a href="#" title="수원시화상영어">수원시화상영어</a></li>
+                                            <li><a href="#" title="도로명주소안내">도로명주소안내</a></li>
+                                            <li><a href="#" title="공원시설물안내">공원시설물안내</a></li>
+                                            <li><a href="#" title="대형폐기물인터넷신고">대형폐기물인터넷신고</a></li>
+                                            <li><a href="#" title="쓰레기분리배출방법">쓰레기분리배출방법</a></li>
+                                            <li><a href="#" title="물가동향">물가동향</a></li>
+                                            <li><a href="#" title="부동산중개수수료">부동산중개수수료</a></li>
+                                            <li><a href="#" title="장난감/아이러브맘">장난감/아이러브맘</a></li>
+                                            <li><a href="#" title="스마트 고지서">스마트 고지서</a></li>
+                                            <li><a href="#" title="시민정보화교육">시민정보화교육</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="list"><a href="#" title="사업자">사업자</a>
+                                    <div class="layer">
+                                        <ul>
+                                            <li><a href="#" title="수원 컨벤션 센터">수원 컨벤션 센터</a></li>
+                                            <li><a href="#" title="옥외광고물">옥외광고물</a></li>
+                                            <li><a href="#" title="수원산업단지">수원산업단지</a></li>
+                                            <li><a href="#" title="마을기업">마을기업</a></li>
+                                            <li><a href="#" title="중소기업지원시책">중소기업지원시책</a></li>
+                                            <li><a href="#" title="기업현황">기업현황</a></li>
+                                            <li><a href="#" title="행정규제개혁">행정규제개혁</a></li>
+                                            <li><a href="#" title="현수막·현수기 게시신청">현수막·현수기 게시신청</a></li>
+                                            <li><a href="#" title="부동산자율점검">부동산자율점검</a></li>
+                                            <li><a href="#" title="투자유치">투자유치</a></li>
+                                            <li><a href="#" title="공장설립">공장설립</a></li>
+                                            <li><a href="#" title="수원시 벤처기업지원센터">수원시 벤처기업지원센터</a></li>
+                                            <li><a href="#" title="전통시장 현황">전통시장 현황</a></li>
+                                            <li><a href="#" title="기업규제 신고시스템">기업규제 신고시스템</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="list"><a href="#" title="관광객">관광객</a>
+                                    <div class="layer">
+                                        <ul>
+                                            <li><a href="#" title="수원화성사이버투어">수원화성사이버투어</a></li>
+                                            <li><a href="#" title="수원의 행사.축제">수원의 행사.축제</a></li>
+                                            <li><a href="#" title="수원화성">수원화성</a></li>
+                                            <li><a href="#" title="착한가격업소">착한가격업소</a></li>
+                                            <li><a href="#" title="체험관광">체험관광</a></li>
+                                            <li><a href="#" title="스토리여행">스토리여행</a></li>
+                                            <li><a href="#" title="수원 화성행궁">수원 화성행궁</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="list"><a href="#" title="사업소/구청">사업소/구청</a>
+                                    <div class="layer">
+                                        <ul>
+                                            <li><a href="#" title="수원시립미술관">수원시립미술관</a></li>
+                                            <li><a href="#" title="상수도사업소">상수도사업소</a></li>
+                                            <li><a href="#" title="박물관사업소">박물관사업소</a></li>
+                                            <li><a href="#" title="권선구청">권선구청</a></li>
+                                            <li><a href="#" title="영통구청">영통구청</a></li>
+                                            <li><a href="#" title="보건소">보건소</a></li>
+                                            <li><a href="#" title="도서관사업소">도서관사업소</a></li>
+                                            <li><a href="#" title="장안구청">장안구청</a></li>
+                                            <li><a href="#" title="팔달구청">팔달구청</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="list"><a href="#" title="유관기관">유관기관</a>
+                                    <div class="layer">
+                                        <ul>
+                                            <li><a href="#" title="수원시중독관리통합지원센터">수원시중독관리통합지원센터</a></li>
+                                            <li><a href="#" title="수원시생애주기별 정신건강복지센터">수원시생애주기별 정신건강복지센터</a></li>
+                                            <li><a href="#" title="수원컨벤션센터">수원컨벤션센터</a></li>
+                                            <li><a href="#" title="수원시글로벌청소년드림센터">수원시글로벌청소년드림센터</a></li>
+                                            <li><a href="#" title="수원시 기후변화체험교육관">수원시 기후변화체험교육관</a></li>
+                                            <li><a href="#" title="수원시외국인복지센터">수원시외국인복지센터</a></li>
+                                            <li><a href="#" title="수원종합운동장">수원종합운동장</a></li>
+                                            <li><a href="#" title="수원시립예술단">수원시립예술단</a></li>
+                                            <li><a href="#" title="수원문화원">수원문화원</a></li>
+                                            <li><a href="#" title="노사민정협의회">노사민정협의회</a></li>
+                                            <li><a href="#" title="수원외국어마을">수원외국어마을</a></li>
+                                            <li><a href="#" title="수원시 환경성질환 아토피센터">수원시 환경성질환 아토피센터</a></li>
+                                            <li><a href="#" title="칠보 생태환경체험교육관">칠보 생태환경체험교육관</a></li>
+                                            <li><a href="#" title="수원SK아트리움">수원SK아트리움</a></li>
+                                            <li><a href="#" title="수원시체육회">수원시체육회</a></li>
+                                            <li><a href="#" title="수원시장학재단">수원시장학재단</a></li>
+                                            <li><a href="#" title="수원시국제교류센터">수원시국제교류센터</a></li>
+                                            <li><a href="#" title="수원시청소년재단">수원시청소년재단</a></li>
+                                            <li><a href="#" title="수원도시재단">수원도시재단</a></li>
+                                            <li><a href="#" title="수원시자살예방센터">수원시자살예방센터</a></li>
+                                            <li><a href="#" title="수원시에너지센터">수원시에너지센터</a></li>
+                                            <li><a href="#" title="수원시신중년인생이모작지원센터">수원시신중년인생이모작지원센터</a></li>
+                                            <li><a href="#" title="광교 생태환경체험교육관">광교 생태환경체험교육관</a></li>
+                                            <li><a href="#" title="수원청년바람지대">수원청년바람지대</a></li>
+                                            <li><a href="#" title="수원시 다문화가족지원센터">수원시 다문화가족지원센터</a></li>
+                                            <li><a href="#" title="수원시 여성문화공간-휴">수원시 여성문화공간-휴</a></li>
+                                            <li><a href="#" title="수원시 휴먼서비스 센터">수원시 휴먼서비스 센터</a></li>
+                                            <li><a href="#" title="수원가족여성회관">수원가족여성회관</a></li>
+                                            <li><a href="#" title="수원시글로벌평생학습관">수원시글로벌평생학습관</a></li>
+                                            <li><a href="#" title="수원시 육아종합지원센터">수원시 육아종합지원센터</a></li>
+                                            <li><a href="#" title="수원시동부육아종합지원센터">수원시동부육아종합지원센터</a></li>
+                                            <li><a href="#" title="수원시 화장실문화 전시관">수원시 화장실문화 전시관</a></li>
+                                            <li><a href="#" title="수원도시공사">수원도시공사</a></li>
+                                            <li><a href="#" title="수원문화재단">수원문화재단</a></li>
+                                            <li><a href="#" title="수원시지역사회보장협의체">수원시지역사회보장협의체</a></li>
+                                            <li><a href="#" title="수원시정연구원">수원시정연구원</a></li>
+                                            <li><a href="#" title="수원시자원봉사센터">수원시자원봉사센터</a></li>
+                                            <li><a href="#" title="수원FC">수원FC</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="list"><a href="#" title="관련기관">관련기관</a>
+                                    <div class="layer">
+                                        <ul>
+                                            <li><a href="#" title="복지로">복지로</a></li>
+                                            <li><a href="#" title="정부24">정부24</a></li>
+                                            <li><a href="#" title="경인지방노동청 수원지청">경인지방노동청 수원지청</a></li>
+                                            <li><a href="#" title="수원교육청">수원교육청</a></li>
+                                            <li><a href="#" title="경기관광공사">경기관광공사</a></li>
+                                            <li><a href="#" title="경기문화재단">경기문화재단</a></li>
+                                            <li><a href="#" title="경기관광포털">경기관광포털</a></li>
+                                            <li><a href="#" title="지식캠퍼스 GSEEK">지식캠퍼스 GSEEK</a></li>
+                                            <li><a href="#" title="한국가스공사">한국가스공사</a></li>
+                                            <li><a href="#" title="경기도청">경기도청</a></li>
+                                            <li><a href="#" title="경기도 교육청">경기도 교육청</a></li>
+                                            <li><a href="#" title="자치법규조례">자치법규조례</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_middle_wrap">
+                    <div class="container">
+                        <div class="footer_middle">
+                            <div class="middle_left">
+                                <div class="left_title"><span>재택치료문의</span></div>
+                                <div class="left_table">
+                                    <table class="table">
+                                        <caption>재택치료문의-구분,장안구보건소,권선구보건소,팔달구보건소,영통구보건소 순 제공</caption>
+                                        <colgroup>
+                                            <col style="width: 15%;">
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">장안구 보건소</th>
+                                            <th scope="col">권선구 보건소</th>
+                                            <th scope="col">팔달구 보건소</th>
+                                            <th scope="col">영통구 보건소</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">주간</th>
+                                                <td>
+                                                    <a href="tel:031-228-5095">031-228-5095</a>
+                                                </td>
+                                                <td>
+                                                    <a href="tel:031-228-1030">031-228-1030</a>
+                                                </td>
+                                                <td>
+                                                    <a href="tel:031-228-7198">031-228-7198</a>
+                                                </td>
+                                                <td>
+                                                    <a href="tel:031-228-1011">031-228-1011</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">야간</th>
+                                                <td>
+                                                    <a href="tel:031-228-5717">031-228-5717</a>
+                                                </td>
+                                                <td>
+                                                    <a href="tel:031-228-6717">031-228-6717</a>
+                                                </td>
+                                                <td>
+                                                    <a href="tel:031-228-7717">031-228-7717</a>
+                                                </td>
+                                                <td>
+                                                    <a href="tel:031-228-8785">031-228-8785</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="middle_right">
+                                <ul class="ritght_top cf">
+                                    <li>
+                                        <a href="tel:031-228-2114">
+                                            <p class="tit">수원시 휴먼콜센터</p>
+                                            <p class="tel"><em>1899-3300</em>, <span>031-228-2114</span></p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="right_bottom">
+                                    <a href="https://pf.kakao.com/_xlxjvPl" target="_blank" title="새창" class="call_btn">수원시 카카오톡 플러스친구</a>
+                                    <a href="https://www.kbei.org/whistle/center/02/s_1.php?code=suwon" target="_blank" title="새창" class="call_btn">공직비리익명신고 & 갑질피해신고</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom_wrap">
+                    <div class="container">
+                        <div class="footer_nav">
+                            <ul class="cf">
+                                <li><a href="#">저작권정책</a></li>
+                                <li><a href="#">개인정보 처리방침</a></li>
+                                <li><a href="#">찾아오시는길</a></li>
+                                <li><a href="#">청사안내</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_add">
+                            <address>
+                                (우편번호:<strong>16490</strong>) 경기도 수원시 팔달구 효원로 241(인계동)
+                            </address>
+                            <span>COPYRIGHT 2022 SUWON CITY. ALL RIGHTS RESERVED.</span>
+                            
+                            <div class="footer_mark">
+                                <div class="item">
+                                    <img src="./img/footer_mark.png" alt="청렴세상 마크">
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <img src="./img/webwatch.png" alt="과학기술정보통신부 마크">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </footer>
+    </div>
+</body>
+</html>
