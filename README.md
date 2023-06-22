@@ -15,7 +15,7 @@
 
 > ### **프로젝트 링크**
  
-- 배포링크 : (https://nuyheshub.github.io/project01_suwon/){:target="_blank"}
+- 배포링크 : <https://nuyheshub.github.io/project01_suwon/>{:target="_blank"}
 - 시연영상 : <https://www.youtube.com/watch?v=Feh43XJuUIA>
 
 <br/>
