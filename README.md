@@ -13,6 +13,13 @@
 <br/>
 <br/>
 
+> ### **프로젝트 링크**
+ 
+- 배포링크 : <a href="https://nuyheshub.github.io/project01_suwon/" target="_blank">
+- 시연영상 : <https://www.youtube.com/watch?v=Feh43XJuUIA>
+
+<br/>
+
 > ### **프로젝트의 목적**
 
 - 웹 페이지의 기본 구성요소를 공부하기 위해 만들었습니다.
@@ -30,8 +37,3 @@
 - 수원시청
 
 <br/>
-
-> ### **프로젝트 링크**
- 
- - 배포링크 : <https://nuyheshub.github.io/project01_suwon/>
- - 시연영상 : <https://www.youtube.com/watch?v=Feh43XJuUIA>
