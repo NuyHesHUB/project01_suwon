@@ -15,7 +15,7 @@
 
 > ### **프로젝트 링크**
  
-- 배포링크 : <a href="https://nuyheshub.github.io/project01_suwon/" target="_blank">dddd</a>
+- 배포링크 : <https://nuyheshub.github.io/project01_suwon/>
 - 시연영상 : <https://www.youtube.com/watch?v=Feh43XJuUIA>
 
 <br/>
@@ -34,6 +34,8 @@
 
 > ### **프로젝트 설명**
 
-- 수원시청
+- 관공서 페이지인 수원 시청을 **클론코딩**하였습니다.
+- <strong>JavaScript</strong>와 <strong>JQuery</strong>를 활용하여 슬라이드를 제작했습니다.
+- 카카오에서 제공하는 <strong>지도 API</strong>를 사용하여 수원 시청의 위치를 확인할 수 있습니다.
 
 <br/>
