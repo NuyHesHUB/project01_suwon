@@ -1,5 +1,7 @@
 # PROJECT 01 수원 시청 관공서 클론 코딩
 
+<hr/>
+
 > ## **프로젝트명**
 
 - 수원 시청 클론코딩 (👨🏻‍💻 1인 프로젝트)
@@ -51,3 +53,11 @@
 <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"><img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"><img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=#0769AD"><img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
 
 <br/>
+
+### ✔️ 기타 기술
+- slick-slider
+- gh-pages
+
+<br/>
+
+<hr/>
