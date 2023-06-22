@@ -39,3 +39,11 @@
 - 카카오에서 제공하는 <strong>지도 API</strong>를 사용하여 수원 시청의 위치를 확인할 수 있습니다.
 
 <br/>
+
+> ## **프로젝트 기술스택**
+
+✔️Front-end
+<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"><img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"><img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=#0769AD">
+✔️
+
+<br/>
